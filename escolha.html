@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="escolha.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="texto">
+            <h1 style="margin-top: 100px;">Tipo de faxina</h1>
+        </div>
+
+        <div id="meio">
+
+            <div class="tres">
+                <div id="desc">
+
+                    <ul style="list-style-position: inside; padding: 0; line-height: 1.8;">
+                        <li>Trabalho Disciplinada</li>
+                        <li>Pontual</li>
+                        <li>Educada</li>
+                        <li>Trabalho bem feito</li>
+                        
+                    </ul>
+
+                </div>
+            </div>
+            
+            <div class="tres">
+                  <ul style="list-style-position: inside; padding: 0; line-height: 1.8;">
+                        <li>Entre em contato para marcar sua faxina:</li>
+                        <li>WhatsApp:</li>
+                        <li>(48) 98868-8560</li>
+                        <li>E-mail:</li>
+                        <li>nasmfs@gmail.com</li>
+                    </ul>
+            </div>
+
+        </div>
+
+            <div id="baixo">
+
+                <button id="botao"><p style="margin: 0;">Entrar em contato</p></button>
+
+            </div>
+        
+
+    </div>
+
+
+
+
+    
+
+
+
+
+</body>
+<script>
+    const botao = document.getElementById('botao');
+
+    botao.addEventListener('click', function() {
+        // Substitua pelo seu número (DDI + DDD + Número)
+        // Exemplo: 55 (Brasil) + 11 (SP) + 999999999
+        const numero = "5511999999999"; 
+        const mensagem = encodeURIComponent("Olá! Gostaria de agendar uma faxina.");
+        const url = `https://wa.me/${numero}?text=${mensagem}`;
+
+        // Abre em uma nova aba
+        window.open(url, '_blank');
+    });
+</script>
+</html>
+
+
